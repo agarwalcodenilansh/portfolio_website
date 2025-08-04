@@ -3,76 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nilansh Agarwal | Portfolio</title>
+    <title>Nilansh Agarwal | Data Engineer & Analyst Portfolio</title>
+    <meta name="description" content="Portfolio of Nilansh Agarwal, Data Engineer & Scientist. Explore projects in data pipelines, analytics dashboards, and machine learning solutions.">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-text h1 {
+            font-size: 4rem;
+            line-height: 1.1;
+            letter-spacing: -2px;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+        }
+        .hero-text h2 {
+            font-size: 1.4rem;
+            color: #b0b0b0;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+        .hero-btns {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+        .hero-btn.primary {
+            background: #00ff99;
+            color: #1a0033;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .hero-btn.primary:hover {
+            background: #00e676;
+            transform: translateY(-2px);
+        }
+        .hero-btn.secondary {
+            background: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .hero-btn.secondary:hover {
+            background: #ffffff;
+            color: #1a0033;
+        }
+        .skills-showcase {
+            margin-top: 4rem;
+            padding: 2rem 0;
+        }
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .skill-tag {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            padding: 0.5rem 1.2rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .skill-tag:hover {
+            background: rgba(0, 255, 153, 0.2);
+            border-color: #00ff99;
+            transform: translateY(-2px);
+        }
+        .hero-content {
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .hero-img {
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+        }
+        .hero-img img {
+            width: 300px;
+            height: 200px;
+            border-radius: 12px;
+            border: 4px solid #00ff99;
+            box-shadow: 0 0 40px rgba(0, 255, 153, 0.3);
+            object-fit: cover;
+        }
+        @media (max-width: 768px) {
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+            .skills-grid {
+                gap: 0.8rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-logo">Nilansh Agarwal</div>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="https://github.com/agarwalcodenilansh" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/nilansh-agarwal-359815253/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="social-link">
+                <a href="https://github.com/agarwalcodenilansh" target="_blank"><i class="fab fa-github"></i></a>
+                <span class="tooltip">GitHub</span>
+            </li>
+            <li class="social-link">
+                <a href="https://www.linkedin.com/in/nilansh-agarwal-359815253/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <span class="tooltip">LinkedIn</span>
+            </li>
+            <li><a class="resume-link" href="Nila.pdf" target="_blank">Resume</a></li>
         </ul>
     </nav>
     <section class="hero" id="home">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Nilansh Agarwal</h1>
-                <h2>Data Engineer-Scientist & Analyst</h2>
-                <p>Building data-driven solutions and insightful dashboards. Skilled in Python, SQL, Power BI, and Machine Learning.</p>
-                <a class="hero-btn" href="#contact">Let's Connect</a>
-            </div>
-            <div class="hero-img">
-                <img src="profile.jpg" alt="Profile Image" />
-            </div>
-        </div>
-    </section>
-    <section class="skills" id="skills">
-        <h2>Technical Expertise</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <i class="fas fa-database"></i>
-                <h3>Data Engineering</h3>
-                <p>Python, SQL, Pandas, DAX, Synapse</p>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-chart-line"></i>
-                <h3>Analytics & BI</h3>
-                <p>Power BI, Excel, Data Visualization</p>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-brain"></i>
-                <h3>Machine Learning</h3>
-                <p>Regression, Classification, Feature Engineering</p>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-code"></i>
-                <h3>Web & Tools</h3>
-                <p>Flask, Jupyter, Git, Azure, GCP, HTML, CSS, JS</p>
+                <h1>Transform Your Data Into Actionable Insights</h1>
+                <h2>Empowering business growth through data-driven solutions. With expertise in data engineering, analytics, and automation, I help companies streamline operations and discover new opportunities.</h2>
+                <div class="hero-btns">
+                    <a class="hero-btn primary" href="projects.html">🚀 View My Projects</a>
+                    <a class="hero-btn secondary" href="Nila.pdf" target="_blank">📄 Download Resume</a>
+                </div>
+                <div class="hero-img">
+                    <img src="profile.jpg" alt="Profile Image" />
+                </div>
             </div>
         </div>
-    </section>
-    <section class="contact" id="contact">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <a href="mailto:nilanshagarwal2611@gmail.com"><i class="fas fa-envelope"></i> nilanshagarwal2611@gmail.com</a>
-            <a href="https://github.com/agarwalcodenilansh" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://www.linkedin.com/in/nilansh-agarwal-359815253/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <div class="skills-showcase">
+            <div class="skills-grid">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Power BI</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Data Engineering</span>
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">NumPy</span>
+                <span class="skill-tag">Flask</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Azure</span>
+                <span class="skill-tag">GCP</span>
+                <span class="skill-tag">Jupyter</span>
+                <span class="skill-tag">DAX</span>
+                <span class="skill-tag">Synapse</span>
+                <span class="skill-tag">Excel</span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+            </div>
         </div>
     </section>
     <footer>
         <div class="footer-social">
             <a href="https://github.com/agarwalcodenilansh" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/nilansh-agarwal-359815253/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:nilanshagarwal2611@gmail.com"><i class="fas fa-envelope"></i></a>
+            <span class="footer-email">
+                <a href="mailto:nilanshagarwal2611@gmail.com"><i class="fas fa-envelope"></i></a>
+                <span class="tooltip">Email Me</span>
+            </span>
         </div>
-        <p>&copy; 2024 Nilansh Agarwal. All rights reserved.</p>
+        <p>&copy; 2025 Nilansh Agarwal. All rights reserved.</p>
     </footer>
 </body>
 </html> 
